@@ -30,8 +30,10 @@ export default function Task({
           name="title"
           id={`title-${id}`}
           placeholder="Input title"
+          style={{ backgroundColor: "red" }}
         />
       </label>
+
       {state !== "TASK_ARCHIVED" && (
         <button
           className="pin-button"
@@ -46,18 +48,13 @@ export default function Task({
     </div>
   );
 }
+
 Task.propTypes = {
-  /** Composition of the task */
   task: PropTypes.shape({
-    /** Id of the task */
     id: PropTypes.string.isRequired,
-    /** Title of the task */
     title: PropTypes.string.isRequired,
-    /** Current state of the task */
     state: PropTypes.string.isRequired,
-  }),
-  /** Event to change the task to archived */
-  onArchiveTask: PropTypes.func,
-  /** Event to change the task to pinned */
-  onPinTask: PropTypes.func,
+  }).isRequired,
+  onArchiveTask: PropTypes.func.isRequired,
+  onPinTask: PropTypes.func.isRequired,
 };
