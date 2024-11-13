@@ -1030,6 +1030,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/addon-a11y@npm:^8.4.3":
+  version: 8.4.3
+  resolution: "@storybook/addon-a11y@npm:8.4.3"
+  dependencies:
+    "@storybook/addon-highlight": "npm:8.4.3"
+    axe-core: "npm:^4.2.0"
+  peerDependencies:
+    storybook: ^8.4.3
+  checksum: 10c0/3b0949268f22d140f339ecec5c9ef85e0447b7e0aaf2d0783d9b00d502190fd7145392d2a2ab131043b35ee817c3b963b5665e4d2e6f2081872784f722f38278
+  languageName: node
+  linkType: hard
+
 "@storybook/addon-actions@npm:8.3.2":
   version: 8.3.2
   resolution: "@storybook/addon-actions@npm:8.3.2"
@@ -1122,6 +1134,17 @@ __metadata:
   peerDependencies:
     storybook: ^8.3.2
   checksum: 10c0/4439a2c51da41af9df4918f7ec3dba9e56cabc0d99bad7d9ebd776e12c5673a300324873c5a49d65428ed867ffbc909f7b5bc0df2489dad881047720e9a2619d
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-highlight@npm:8.4.3":
+  version: 8.4.3
+  resolution: "@storybook/addon-highlight@npm:8.4.3"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+  peerDependencies:
+    storybook: ^8.4.3
+  checksum: 10c0/428a8676e25fd16efe65fe88ea578373c0be822361f5ac89d58480795ac52128bb72e1ef4a8a319f36e4781f44437ad6d4c36e1b0dff9f7aad9ba1e93d7fb3c4
   languageName: node
   linkType: hard
 
@@ -2258,6 +2281,13 @@ __metadata:
   dependencies:
     possible-typed-array-names: "npm:^1.0.0"
   checksum: 10c0/d07226ef4f87daa01bd0fe80f8f310982e345f372926da2e5296aecc25c41cab440916bbaa4c5e1034b453af3392f67df5961124e4b586df1e99793a1374bdb2
+  languageName: node
+  linkType: hard
+
+"axe-core@npm:^4.2.0":
+  version: 4.10.2
+  resolution: "axe-core@npm:4.10.2"
+  checksum: 10c0/0e20169077de96946a547fce0df39d9aeebe0077f9d3eeff4896518b96fde857f80b98f0d4279274a7178791744dd5a54bb4f322de45b4f561ffa2586ff9a09d
   languageName: node
   linkType: hard
 
@@ -4093,6 +4123,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "intro-storybook-react-template@workspace:."
   dependencies:
+    "@storybook/addon-a11y": "npm:^8.4.3"
     "@storybook/addon-essentials": "npm:^8.3.2"
     "@storybook/addon-interactions": "npm:^8.3.2"
     "@storybook/addon-links": "npm:^8.3.2"
